@@ -1,0 +1,443 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght&display=swap');
+  *{
+    padding:0px;
+    margin:0px;
+  }
+  body{
+background-color:#8ecae6;
+  }
+
+.front{
+    background-color:#219ebc;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    margin:-8px;
+    margin-top:-99px;
+}
+#navbutton{
+    box-sizing: border-box;
+    margin-left:30px;
+    margin-top: 20px;
+    position:absolute;
+    color:#f9f9fa;
+    font-size: 28px;
+    padding:20px;
+
+}
+#navbuttontext{
+    visibility: hidden;
+    position:absolute;
+    position: absolute;
+    left: 42px;
+    top:0px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 2px;
+    font-family:'Nunito', sans-serif  ;
+    width:51px;
+    font-size: small;
+}
+#navbutton:hover #navbuttontext{
+    visibility: visible;
+    transition:1s ease 0.4s;
+}
+
+#navbutton:hover{  
+    font-size: 29px;
+}
+
+.intro{
+    color:aliceblue;
+    
+}
+
+
+#name{
+    font-family: 'Kanit', sans-serif;;
+
+}
+
+
+.mediacontact{
+  display: flex;
+  flex-direction: column;
+position:absolute;
+right:0px;
+ bottom:290px;
+}
+
+#facebook,#instagram,#github,#linkedin{
+    width:35px;
+}
+#mail{
+    position: relative;
+    right:-5px;
+    width:25px;
+}
+
+#mail:hover,#facebook:hover,#instagram:hover,#github:hover,#linkedin:hover{
+    filter: invert(100%);
+}
+#facebook,#instagram,#github,#mail,#linkedin{
+    transition:all 0.3s ease-in 0s;
+} 
+
+.name{
+    position:absolute;
+    right:35px;
+    font-size: 15px;
+    margin-top:10px;
+    text-decoration: none;
+    color:azure;
+    font-family:'Nunito', sans-serif  ;
+    text-transform: capitalize;
+    visibility:hidden;
+}
+.media:hover .name{
+visibility:visible;
+animation: letter 0.7s ease-out 0s 1 forwards;
+}
+@keyframes letter {
+    from{}
+
+    to {
+        transform:translateX(-12px) ;
+    }
+}
+
+
+.button a {
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    font-weight: 200;
+}
+.intro{  
+    height:478px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items:start ; 
+    padding-top:180px;
+    margin-top:100px;
+    padding-left:290px;
+   font-family:'Nunito', sans-serif ;
+   background-color: rgba(0, 0, 0, 0.452);
+}
+.intro1::first-line{
+    font-size:30px;
+    font-family:'poppins', sans-serif;
+    color:white;
+    font-weight: 700;
+}
+#name{
+font-size:50px ;
+font-family: 'Poppins', sans-serif;
+color:transparent;
+-webkit-text-stroke:1px white;
+background: url('image/back1.png');
+-webkit-background-clip: text;
+background-position: 0 0;
+animation: back 30s linear infinite;
+font-weight:800;
+}
+@keyframes back{
+    100%{
+        background-position:2000px 0;
+    }
+}
+#first{
+font-size:29px;
+color:white;
+font-family:'poppins',sans-serif;
+font-weight:600;
+display:flex;
+
+
+ }
+ #first_ul{
+    margin-left:7px;
+    font-size:29px;
+color:white;
+font-family:'poppins',sans-serif;
+font-weight:600;
+list-style:none;
+position:relative;
+height:50%;
+overflow:hidden;
+ }
+ #first_ul li{
+    position:relative;
+    animation:uptodownscroll 4s steps(2) infinite;
+    color:#ffd60a;
+ }
+ @keyframes uptodownscroll{
+    100%{
+        top:-100%;
+    }
+ }
+ #first_ul li span{
+    position:relative;
+
+ }
+ #first_ul li span::after{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    background-color:#06566a;
+    border-left:3px solid #ffd60a;
+animation:texttypefrontpage 2s steps(15) infinite;
+    
+ }
+@keyframes texttypefrontpage{
+   100%{
+    left:100%; 
+    }
+}
+ #second{
+    font-size:17px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-family:'Nunito', sans-serif ;
+    position:relative;
+    bottom:50px;
+    }
+.button{
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -28px;
+    margin-left: -40px;
+}
+
+#button1,#button2{
+    border:1px solid rgb(255, 255, 255);
+    height:fit-content;
+    padding:3px;
+    margin-left: 40px;
+    width:fit-content;
+    font-size: 20px;
+    font-family:'Nunito', sans-serif ;
+    transition:  all 0.2s ease-in 0s;
+}
+#button1:hover,#button2:hover{
+    background-color: #023047;
+    border:1px solid #06566a;
+   box-shadow:1px 1px  40px rgb(171, 145, 243);  
+   color:rgb(171, 145, 243);
+}
+
+
+.secondpage{
+  
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    background-color:#938BA1;
+    margin:auto;
+   margin-top: 97px;
+   box-shadow: 7px 7px 7.5px #737978;
+    height:546px;
+    width:1100px;
+
+}
+
+.secondpage h4{
+    padding-top:25px;
+    margin-top:20px;
+    text-align: center;
+    text-transform: capitalize;
+    color:#f9f9fa;
+    font-size:27px;
+    font-family:'Nunito', sans-serif  ;
+    animation: aboutme 1s ease-in-out 0s 1 forwards;
+} 
+@keyframes aboutme{
+    from{
+    transform: translateX(160px)
+    }
+    to
+    {
+  
+    transform:translateX(0px);
+    }
+    0%{
+        opacity:-100%;
+    }
+}
+
+#selfimage{
+    background-color:#938BA1;
+    position:absolute;
+    margin-left:23px;
+    margin-top: 40px;
+    width:305px;
+
+}
+.introaboutme{
+    margin-top:20px;
+    text-align: center;
+    width:fit-content;
+    color:white;
+    margin-left:350px;
+    text-transform:capitalize;
+    font-family:'Nunito', sans-serif  ;
+    
+}
+#resume{
+    box-sizing: border-box;
+    box-shadow:3px 3px 7.5px black;
+    background-color:aqua;
+    color:black;
+    padding:6px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+#resume:hover{
+    animation:resumehovereffect 0.1s ease-in 0s forwards;
+}
+@keyframes resumehovereffect{
+    from{
+        box-shadow:3px 3px 7.5px black;   
+    }
+    to{
+  
+        color:rgb(171, 145, 243);  
+    }
+}
+#firstlineintroaboutme{
+    color:white;
+}
+#secondlineintroaboutme{
+    color:white;
+}
+#firstlineintroaboutme , #secondlineintroaboutme{
+
+    animation:bothlineintroaboutme 1s ease-in-out 0s 1 forwards;
+
+}
+@keyframes bothlineintroaboutme{
+
+    from{
+        transform: translateY(160px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+    0%{
+        opacity:-100%;
+    }
+}
+.service{
+height:500px;
+box-sizing: border-box;
+margin-top:100px;
+
+}
+
+#service1{
+font-size: 50px;
+text-transform:capitalize;
+font-family: 'Exo', sans-serif;
+padding-left: 100px;
+}
+
+.servicegrid{
+    
+    padding-top:30px;
+   display:flex;
+   justify-content: center;
+    display: grid;
+    grid-template-rows: 200px 200px ;
+    grid-template-columns: 250px 250px 250px;
+    gap: 50px;
+    column-gap: 30px;
+    text-transform: capitalize;
+    font-size:23px;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+.sevicegridimgandtext{
+    box-shadow:6px 6px 5.5px rgb(202, 202, 96),-6px -6px 5.5px #29335C;
+}
+.serviceimage{
+    position:absolute;
+    width:250px
+}
+.hovertoappear{
+    text-decoration: none;
+}
+.imagetitletext{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    color:aliceblue;
+    background-color:rgba(0, 0, 0, 0.281);
+    width:250px;
+    height:200px;
+}
+#myskillsfont{
+    font-family:'Rubik', sans-serif;
+font-size: 35px;    
+padding-left:100px;
+
+}
+.myskills{
+    margin-top:180px;
+    box-sizing: border-box;
+    text-transform:capitalize;
+}
+#myskillssmalldescribe{
+    font-family: 'Rubik', sans-serif;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:10px;
+    font-size:18px;
+}
+.myskillsprogession{
+    position:relative;
+    display:grid;
+    justify-content: center;
+    grid-template-columns:310px 310px 310px ;
+    grid-template-rows:100px 100px 100px ;
+    row-gap: 70px;
+    column-gap: 40px;
+    padding-top: 40px;
+}
+
+.myskill{
+    height:100px;
+    width:310px;
+    border:2px solid black;
+}
+.myprojects{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.myprojectstitle{
+    font-family: 'Rubik', sans-serif;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:10px;
+    font-size: 35px;
+    text-transform: capitalize;
+}

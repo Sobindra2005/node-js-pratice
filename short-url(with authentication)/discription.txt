@@ -1,0 +1,21 @@
+                      ----DESIGN A URL SHORTNER -----
+
+design a url shortner service that takes in valid URL and returns a shortnerer URL redirecting the user to the previously provided URl .
+
+Also , keep track of total visits/clicks on the URL. 
+
+ROUTES
+
+POST /URL : Generate a new short Url and returns the shortened URL in the format example.com/random-id 
+
+GET/:id - Redirects the user to the original url .
+
+GET/URL/analytics/:id - Returns the click for the provided  short id .
+
+
+
+          -----EJS------
+
+At first we have to set which view engine we are using so 
+app.set("view engine ","ejs") --> since we are using the ejs as a view engine so i am setting the ejs as a view engine 
+

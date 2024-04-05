@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background-color: #370617;
+  height: 98vh;
+  background-size: cover;
+}
+.container {
+  color: white;
+  text-transform: capitalize;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.container {
+  width: fit-content;
+  height: fit-content;
+}
+.container #title {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 300px;
+}
+#title {
+  color: #00b4d8;
+}
+#second {
+  color: red;
+}
+#third {
+  color: blue;
+}
+#third span {
+  color: aquamarine;
+}
+#password {
+  overflow-x: scroll;
+  font-size: 20px;
+  padding: 0px 20px;
+  padding-right: 40px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 350px;
+  border-radius: 60px;
+  position: absolute;
+}
+.copy {
+  width: 20px;
+  position: relative;
+  left: 375px;
+  top: 23px;
+  cursor: pointer;
+}
+.generateBtn {
+  position: relative;
+  margin: auto;
+  top: 120px;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 8px;
+  background: #023e8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.generateBtn span img {
+  width: 16px;
+  height: 20px;
+}
+.passtester {
+  width: fit-content;
+  height: fit content;
+}

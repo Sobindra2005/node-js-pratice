@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+            
+            color:red;
+        }
+        table,tr,td,th{
+            border:1px solid black;
+            overflow:hidden;
+        }
+td{
+    width:200px;
+    overflow-x: hidden;
+}
+            
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>------URL Shortner-----</h1>
+    
+  
+    <form method="post" action="/test/url">
+
+   <label>Enter your url </label>
+<input type="text" name="url" placeholder="http://www.example/com">
+<button type="submit">Generate</button>
+
+
+</form>
+<% if (locals.id) { %>
+    <p>Generated shortURL= localhost:8000/test/url/<%=id%></p>
+   <% } %>
+<br><br><br>
+<table>
+    <thead>
+        <th>S.No</th>
+        <th>redirectURL</th>
+        <th>short url</th>
+
+        <th>total visits</th>
+
+    </thead>
+    <tbody>
+        
+            <% urls.forEach((url,index) => { %>
+                <tr>
+             <td><%= index + 1 %> </td>
+             <td><%= url.redirectURL %> </td>
+             <td>localhost:8000/test/url/<%=url.shortId%> </td>
+             <td><%= url.visitHistroy.length %> </td>
+            </tr>
+            <% }) %>
+        
+    </tbody>
+</table>
+
+</body>
+</html>

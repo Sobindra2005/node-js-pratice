@@ -1,0 +1,3 @@
+what really is restapi?
+
+restapi is like a set of rules which folows the principle of rules .
